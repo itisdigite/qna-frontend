@@ -98,7 +98,12 @@ html, body{
   font-size: 14px;
   text-align: center;
 }
-.container .google,
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* .container .google,
 .container .facebook a,
 .container .twitter a{
   display: block;
@@ -144,4 +149,4 @@ html, body{
 .container .facebook a:hover{
   background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
   margin: 20px 0 50px 0;
-}
+} */

@@ -34,22 +34,32 @@ def login():
 def register():
     return render_template('register.html')
 
+# ----------------**--------------------
+# @app.route('/verify', methods=['GET', 'POST'])
+# def verify():
+#     if request.method == 'POST':
+#         verification_code = request.form['verification_code']
+#         # Add your verification logic here
+#         return "Verification Successful"  # Placeholder response
+#     return render_template('verification.html')
+
+
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8081)
+    app.run(debug=True, port=8080)
 
 #
 
 # Step 3: Define a route for '/login'
 #@app.route("/login")
 #def login():
-	# Render 'login.html' when the '/login' route is accessed
-	#return render_template("login.html")
+    # Render 'login.html' when the '/login' route is accessed
+    #return render_template("login.html")
 
 #if __name__ == '__main__':
-	# Step 4: Run the Flask application
-	# Set debug=True for development to auto-reload on changes
-	#app.run(debug=True, port=8081)
+    # Step 4: Run the Flask application
+    # Set debug=True for development to auto-reload on changes
+    #app.run(debug=True, port=8081)
 
      # Simple registration page or logic here
     #return redirect(url_for("Register.html")) # Removed the erroneous part
