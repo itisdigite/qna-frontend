@@ -33,12 +33,9 @@ Make sure you have the following installed:
     cd question-answering-app
     ```
 
-2. Open your browser and navigate to `http://localhost:8081` to see the application.
+2. Open your browser and navigate to `http://localhost:8080` to see the application.
 
 
-### Contributing
-
-Contributions are welcome! Please fork this repository and submit a pull request for any changes.
 
 ### License
 
