@@ -7,26 +7,35 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #fff;
   color: #fff;
+  gap: 15px; /* Adds space between the logos */
 }
 
 .lg-header .logo {
-  height: 50px;
-  margin-right: 20px;
+  height: 50px; /* Adjust the size of the Nimble logo */
 }
 
 .header-txt {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   font-weight: bold;
 }
 
+.header-txt img {
+  height: 40px; /* Adjust the size of the QNA logo */
+  margin-left: 10px; /* Space between Nimble and QNA logos */
+}
+
 .container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: #fff;
+  width: 100%;
+  max-width: 400px; /* Set a max-width for the form */
+  margin: 110px auto;
+  padding: 32px;
+  background-color: #d7d5d3;
   box-shadow: 0 0 10px #838280b5;
+  border-radius: 8px; /* Optional: Add rounded corners */
 }
 
 .title {
@@ -34,43 +43,40 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+  border-bottom: solid;
 }
 
-.input-box {
-  position: relative;
-  margin-bottom: 20px;
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.input-box input {
+input[type="email"], input[type="text"] {
+  width: calc(100% - 20px); /* Full width with padding adjustment */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Optional: Add rounded corners to inputs */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+input[type="email"]:focus, input[type="text"]:focus {
+  border-color: #333;
+  outline: none;
+}
+
+button {
+  display: block;
   width: 100%;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid #333;
-  background: none;
-}
-
-.input-box .underline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-}
-
-.input-box.button {
-  text-align: center;
-}
-
-.input-box.button input {
-  width: auto;
-  padding: 10px 20px;
   background-color: #333;
   color: #fff;
-  border: none;
+  font-size: 16px;
+  border-radius: 4px; /* Optional: Add rounded corners to button */
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.input-box.button input:hover {
+button:hover {
   background-color: #555;
 }
